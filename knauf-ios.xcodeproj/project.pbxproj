@@ -1,0 +1,988 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45869E20772BD4B137CB12D9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE865BE7BD11F20A2BAF48A3 /* libPods.a */; };
+		644414DF1C6D3F67006E8D36 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 644414DE1C6D3F67006E8D36 /* Default-568h@2x.png */; };
+		644414E21C6D3F7C006E8D36 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 644414E01C6D3F7C006E8D36 /* Default.png */; };
+		644414E31C6D3F7C006E8D36 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 644414E11C6D3F7C006E8D36 /* Default@2x.png */; };
+		CE2983671C46848B003D1841 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2983661C46848B003D1841 /* main.m */; };
+		CE29836A1C46848B003D1841 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2983691C46848B003D1841 /* AppDelegate.m */; };
+		CE2983701C46848B003D1841 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE29836E1C46848B003D1841 /* Main.storyboard */; };
+		CE2983731C46848B003D1841 /* knauf_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE2983711C46848B003D1841 /* knauf_ios.xcdatamodeld */; };
+		CE2983751C46848B003D1841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2983741C46848B003D1841 /* Assets.xcassets */; };
+		CE2983781C46848B003D1841 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2983761C46848B003D1841 /* LaunchScreen.storyboard */; };
+		CE2983831C46848B003D1841 /* knauf_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2983821C46848B003D1841 /* knauf_iosTests.m */; };
+		CE29838E1C46848B003D1841 /* knauf_iosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29838D1C46848B003D1841 /* knauf_iosUITests.m */; };
+		CE97643F1C4E4E530070D6E7 /* ResultsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE97643D1C4E4E530070D6E7 /* ResultsTableViewCell.m */; };
+		CE9764401C4E4E530070D6E7 /* ResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE97643E1C4E4E530070D6E7 /* ResultsTableViewCell.xib */; };
+		CE9764431C4E50FE0070D6E7 /* KNResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9764421C4E50FE0070D6E7 /* KNResultsViewController.m */; };
+		CE9E8AD31C58E27000F7909A /* KNAcousticResult.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E8AD21C58E27000F7909A /* KNAcousticResult.m */; };
+		CEAFA7D11C4E195300639627 /* KNDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAFA7D01C4E195300639627 /* KNDefines.m */; };
+		CEAFA7D71C4E1FDF00639627 /* KNSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAFA7D61C4E1FDF00639627 /* KNSplashViewController.m */; };
+		CEB3E0B01C5A510B007FB993 /* KNResultsAcoustic.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB3E0AF1C5A510B007FB993 /* KNResultsAcoustic.m */; };
+		CEBA72471C6340CE0011991B /* KNInsulationResult.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBA72461C6340CE0011991B /* KNInsulationResult.m */; };
+		CEBA724A1C6364030011991B /* KNResultsInsulation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBA72491C6364030011991B /* KNResultsInsulation.m */; };
+		CEBC12E51C5104560098931A /* KNResult.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC12E41C5104560098931A /* KNResult.m */; };
+		CEBC12E81C511D9F0098931A /* KNChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC12E71C511D9F0098931A /* KNChoiceViewController.m */; };
+		CEBC12EB1C5124160098931A /* KNChSystemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC12EA1C5124160098931A /* KNChSystemViewController.m */; };
+		CEBC12EE1C512A820098931A /* KNTypeBuildingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC12ED1C512A820098931A /* KNTypeBuildingViewController.m */; };
+		CEBC12F11C5256140098931A /* KNAcusticViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC12F01C5256140098931A /* KNAcusticViewController.m */; };
+		CEBC12F41C52597F0098931A /* KNFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC12F31C52597F0098931A /* KNFilterViewController.m */; };
+		CEBC12F71C52599B0098931A /* KNInsulationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC12F61C52599B0098931A /* KNInsulationViewController.m */; };
+		CEBC130C1C5619430098931A /* KNAbsorption.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC130B1C5619430098931A /* KNAbsorption.m */; };
+		CEBC130F1C561A910098931A /* KNAcoustic.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC130E1C561A910098931A /* KNAcoustic.m */; };
+		CEBC13121C561DE20098931A /* KNBuilding.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC13111C561DE20098931A /* KNBuilding.m */; };
+		CEBC13161C561E9F0098931A /* KNDanoline.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC13151C561E9F0098931A /* KNDanoline.m */; };
+		CEBC13191C5622C10098931A /* KNDesign.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC13181C5622C10098931A /* KNDesign.m */; };
+		CEBC131C1C56246C0098931A /* KNFacing.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC131B1C56246C0098931A /* KNFacing.m */; };
+		CEBC131F1C5625100098931A /* KNFittingContent.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC131E1C5625100098931A /* KNFittingContent.m */; };
+		CEBC13221C56269E0098931A /* KNFloorCovering.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC13211C56269E0098931A /* KNFloorCovering.m */; };
+		CEBC13251C5626E40098931A /* KNFloors.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC13241C5626E40098931A /* KNFloors.m */; };
+		CEBC13281C5627EC0098931A /* KNPartition.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC13271C5627EC0098931A /* KNPartition.m */; };
+		CEBC132B1C5628720098931A /* KNProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC132A1C5628720098931A /* KNProperty.m */; };
+		CEBC132E1C5628CA0098931A /* KNReactance.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC132D1C5628CA0098931A /* KNReactance.m */; };
+		CEBC13321C5629430098931A /* KNWallsCovering.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC13311C5629430098931A /* KNWallsCovering.m */; };
+		CEBC13351C5629970098931A /* KNRiessler.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC13341C5629970098931A /* KNRiessler.m */; };
+		CEBC13381C562C390098931A /* KNRoofs.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC13371C562C390098931A /* KNRoofs.m */; };
+		CEBC133B1C562C980098931A /* KNSpecial.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC133A1C562C980098931A /* KNSpecial.m */; };
+		CEBC133E1C562D770098931A /* KNAbsorption+FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC133D1C562D770098931A /* KNAbsorption+FMResultSet.m */; };
+		CEBC13411C562D940098931A /* KNAcoustic+FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC13401C562D940098931A /* KNAcoustic+FMResultSet.m */; };
+		CEBC13441C562DAC0098931A /* KNBuilding+FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC13431C562DAC0098931A /* KNBuilding+FMResultSet.m */; };
+		CEBC13471C562DC20098931A /* KNDanoline+FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC13461C562DC20098931A /* KNDanoline+FMResultSet.m */; };
+		CEBC134A1C562DE10098931A /* KNDesign+FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC13491C562DE10098931A /* KNDesign+FMResultSet.m */; };
+		CEBC134D1C562E060098931A /* KNFacing+FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC134C1C562E060098931A /* KNFacing+FMResultSet.m */; };
+		CEBC13501C562E260098931A /* KNFittingContent+FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC134F1C562E260098931A /* KNFittingContent+FMResultSet.m */; };
+		CEBC13531C562E4D0098931A /* KNFloorCovering+FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC13521C562E4D0098931A /* KNFloorCovering+FMResultSet.m */; };
+		CEBC13561C562E660098931A /* KNFloors+FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC13551C562E660098931A /* KNFloors+FMResultSet.m */; };
+		CEBC13591C562E7D0098931A /* KNPartition+FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC13581C562E7D0098931A /* KNPartition+FMResultSet.m */; };
+		CEBC135C1C562E940098931A /* KNProperty+FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC135B1C562E940098931A /* KNProperty+FMResultSet.m */; };
+		CEBC135F1C562EAB0098931A /* KNReactance+FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC135E1C562EAB0098931A /* KNReactance+FMResultSet.m */; };
+		CEBC13621C562EC60098931A /* KNRiessler+FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC13611C562EC60098931A /* KNRiessler+FMResultSet.m */; };
+		CEBC13651C562ED60098931A /* KNRoofs+FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC13641C562ED60098931A /* KNRoofs+FMResultSet.m */; };
+		CEBC13681C562EE90098931A /* KNSpecial+FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC13671C562EE90098931A /* KNSpecial+FMResultSet.m */; };
+		CEBC136B1C562F000098931A /* KNWallsCovering+FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC136A1C562F000098931A /* KNWallsCovering+FMResultSet.m */; };
+		CEBC13711C57B38E0098931A /* DownPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC136E1C57B38E0098931A /* DownPicker.m */; };
+		CEBC13721C57B38E0098931A /* UIDownPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC13701C57B38E0098931A /* UIDownPicker.m */; };
+		CEBC13751C58AEBD0098931A /* KNCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC13741C58AEBD0098931A /* KNCustomView.m */; };
+		CEBC13771C58AEF30098931A /* KNCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEBC13761C58AEF30098931A /* KNCustomView.xib */; };
+		CEBE19B61C4EA70600B19809 /* KNDataClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBE19B51C4EA70600B19809 /* KNDataClient.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE29837F1C46848B003D1841 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE29835A1C46848B003D1841 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE2983611C46848B003D1841;
+			remoteInfo = "knauf-ios";
+		};
+		CE29838A1C46848B003D1841 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE29835A1C46848B003D1841 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE2983611C46848B003D1841;
+			remoteInfo = "knauf-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		644414DE1C6D3F67006E8D36 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		644414E01C6D3F7C006E8D36 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		644414E11C6D3F7C006E8D36 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A0C0502E225CB983B6A099BA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B22BF63AD9ADF258B24169E2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CE2983621C46848B003D1841 /* knauf-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "knauf-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2983661C46848B003D1841 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE2983681C46848B003D1841 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE2983691C46848B003D1841 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CE29836F1C46848B003D1841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE2983721C46848B003D1841 /* knauf_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = knauf_ios.xcdatamodel; sourceTree = "<group>"; };
+		CE2983741C46848B003D1841 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE2983771C46848B003D1841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE2983791C46848B003D1841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE29837E1C46848B003D1841 /* knauf-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "knauf-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2983821C46848B003D1841 /* knauf_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = knauf_iosTests.m; sourceTree = "<group>"; };
+		CE2983841C46848B003D1841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE2983891C46848B003D1841 /* knauf-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "knauf-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE29838D1C46848B003D1841 /* knauf_iosUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = knauf_iosUITests.m; sourceTree = "<group>"; };
+		CE29838F1C46848B003D1841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE97643C1C4E4E530070D6E7 /* ResultsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsTableViewCell.h; sourceTree = "<group>"; };
+		CE97643D1C4E4E530070D6E7 /* ResultsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsTableViewCell.m; sourceTree = "<group>"; };
+		CE97643E1C4E4E530070D6E7 /* ResultsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultsTableViewCell.xib; sourceTree = "<group>"; };
+		CE9764411C4E50FE0070D6E7 /* KNResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNResultsViewController.h; sourceTree = "<group>"; };
+		CE9764421C4E50FE0070D6E7 /* KNResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNResultsViewController.m; sourceTree = "<group>"; };
+		CE9E8AD11C58E27000F7909A /* KNAcousticResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNAcousticResult.h; sourceTree = "<group>"; };
+		CE9E8AD21C58E27000F7909A /* KNAcousticResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNAcousticResult.m; sourceTree = "<group>"; };
+		CEAFA7CF1C4E195300639627 /* KNDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNDefines.h; sourceTree = "<group>"; };
+		CEAFA7D01C4E195300639627 /* KNDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNDefines.m; sourceTree = "<group>"; };
+		CEAFA7D21C4E1D3000639627 /* Knauf-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Knauf-PrefixHeader.pch"; sourceTree = SOURCE_ROOT; };
+		CEAFA7D51C4E1FDF00639627 /* KNSplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSplashViewController.h; sourceTree = "<group>"; };
+		CEAFA7D61C4E1FDF00639627 /* KNSplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNSplashViewController.m; sourceTree = "<group>"; };
+		CEB3E0AE1C5A510B007FB993 /* KNResultsAcoustic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNResultsAcoustic.h; sourceTree = "<group>"; };
+		CEB3E0AF1C5A510B007FB993 /* KNResultsAcoustic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNResultsAcoustic.m; sourceTree = "<group>"; };
+		CEBA72451C6340CE0011991B /* KNInsulationResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNInsulationResult.h; sourceTree = "<group>"; };
+		CEBA72461C6340CE0011991B /* KNInsulationResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNInsulationResult.m; sourceTree = "<group>"; };
+		CEBA72481C6364030011991B /* KNResultsInsulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNResultsInsulation.h; sourceTree = "<group>"; };
+		CEBA72491C6364030011991B /* KNResultsInsulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNResultsInsulation.m; sourceTree = "<group>"; };
+		CEBC12E31C5104560098931A /* KNResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNResult.h; sourceTree = "<group>"; };
+		CEBC12E41C5104560098931A /* KNResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNResult.m; sourceTree = "<group>"; };
+		CEBC12E61C511D9F0098931A /* KNChoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNChoiceViewController.h; sourceTree = "<group>"; };
+		CEBC12E71C511D9F0098931A /* KNChoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNChoiceViewController.m; sourceTree = "<group>"; };
+		CEBC12E91C5124160098931A /* KNChSystemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNChSystemViewController.h; sourceTree = "<group>"; };
+		CEBC12EA1C5124160098931A /* KNChSystemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNChSystemViewController.m; sourceTree = "<group>"; };
+		CEBC12EC1C512A820098931A /* KNTypeBuildingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNTypeBuildingViewController.h; sourceTree = "<group>"; };
+		CEBC12ED1C512A820098931A /* KNTypeBuildingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNTypeBuildingViewController.m; sourceTree = "<group>"; };
+		CEBC12EF1C5256140098931A /* KNAcusticViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNAcusticViewController.h; sourceTree = "<group>"; };
+		CEBC12F01C5256140098931A /* KNAcusticViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNAcusticViewController.m; sourceTree = "<group>"; };
+		CEBC12F21C52597F0098931A /* KNFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNFilterViewController.h; sourceTree = "<group>"; };
+		CEBC12F31C52597F0098931A /* KNFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNFilterViewController.m; sourceTree = "<group>"; };
+		CEBC12F51C52599B0098931A /* KNInsulationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNInsulationViewController.h; sourceTree = "<group>"; };
+		CEBC12F61C52599B0098931A /* KNInsulationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNInsulationViewController.m; sourceTree = "<group>"; };
+		CEBC13071C56154A0098931A /* KNModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNModels.h; sourceTree = "<group>"; };
+		CEBC130A1C5619430098931A /* KNAbsorption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNAbsorption.h; sourceTree = "<group>"; };
+		CEBC130B1C5619430098931A /* KNAbsorption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNAbsorption.m; sourceTree = "<group>"; };
+		CEBC130D1C561A910098931A /* KNAcoustic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNAcoustic.h; sourceTree = "<group>"; };
+		CEBC130E1C561A910098931A /* KNAcoustic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNAcoustic.m; sourceTree = "<group>"; };
+		CEBC13101C561DE20098931A /* KNBuilding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNBuilding.h; sourceTree = "<group>"; };
+		CEBC13111C561DE20098931A /* KNBuilding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNBuilding.m; sourceTree = "<group>"; };
+		CEBC13141C561E9F0098931A /* KNDanoline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNDanoline.h; sourceTree = "<group>"; };
+		CEBC13151C561E9F0098931A /* KNDanoline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNDanoline.m; sourceTree = "<group>"; };
+		CEBC13171C5622C10098931A /* KNDesign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNDesign.h; sourceTree = "<group>"; };
+		CEBC13181C5622C10098931A /* KNDesign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNDesign.m; sourceTree = "<group>"; };
+		CEBC131A1C56246C0098931A /* KNFacing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNFacing.h; sourceTree = "<group>"; };
+		CEBC131B1C56246C0098931A /* KNFacing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNFacing.m; sourceTree = "<group>"; };
+		CEBC131D1C5625100098931A /* KNFittingContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNFittingContent.h; sourceTree = "<group>"; };
+		CEBC131E1C5625100098931A /* KNFittingContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNFittingContent.m; sourceTree = "<group>"; };
+		CEBC13201C56269E0098931A /* KNFloorCovering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNFloorCovering.h; sourceTree = "<group>"; };
+		CEBC13211C56269E0098931A /* KNFloorCovering.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNFloorCovering.m; sourceTree = "<group>"; };
+		CEBC13231C5626E40098931A /* KNFloors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNFloors.h; sourceTree = "<group>"; };
+		CEBC13241C5626E40098931A /* KNFloors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNFloors.m; sourceTree = "<group>"; };
+		CEBC13261C5627EC0098931A /* KNPartition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNPartition.h; sourceTree = "<group>"; };
+		CEBC13271C5627EC0098931A /* KNPartition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNPartition.m; sourceTree = "<group>"; };
+		CEBC13291C5628720098931A /* KNProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNProperty.h; sourceTree = "<group>"; };
+		CEBC132A1C5628720098931A /* KNProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNProperty.m; sourceTree = "<group>"; };
+		CEBC132C1C5628CA0098931A /* KNReactance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNReactance.h; sourceTree = "<group>"; };
+		CEBC132D1C5628CA0098931A /* KNReactance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNReactance.m; sourceTree = "<group>"; };
+		CEBC13301C5629430098931A /* KNWallsCovering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNWallsCovering.h; sourceTree = "<group>"; };
+		CEBC13311C5629430098931A /* KNWallsCovering.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNWallsCovering.m; sourceTree = "<group>"; };
+		CEBC13331C5629970098931A /* KNRiessler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNRiessler.h; sourceTree = "<group>"; };
+		CEBC13341C5629970098931A /* KNRiessler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNRiessler.m; sourceTree = "<group>"; };
+		CEBC13361C562C390098931A /* KNRoofs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNRoofs.h; sourceTree = "<group>"; };
+		CEBC13371C562C390098931A /* KNRoofs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNRoofs.m; sourceTree = "<group>"; };
+		CEBC13391C562C980098931A /* KNSpecial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSpecial.h; sourceTree = "<group>"; };
+		CEBC133A1C562C980098931A /* KNSpecial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNSpecial.m; sourceTree = "<group>"; };
+		CEBC133C1C562D770098931A /* KNAbsorption+FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KNAbsorption+FMResultSet.h"; sourceTree = "<group>"; };
+		CEBC133D1C562D770098931A /* KNAbsorption+FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KNAbsorption+FMResultSet.m"; sourceTree = "<group>"; };
+		CEBC133F1C562D940098931A /* KNAcoustic+FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KNAcoustic+FMResultSet.h"; sourceTree = "<group>"; };
+		CEBC13401C562D940098931A /* KNAcoustic+FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KNAcoustic+FMResultSet.m"; sourceTree = "<group>"; };
+		CEBC13421C562DAC0098931A /* KNBuilding+FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KNBuilding+FMResultSet.h"; sourceTree = "<group>"; };
+		CEBC13431C562DAC0098931A /* KNBuilding+FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KNBuilding+FMResultSet.m"; sourceTree = "<group>"; };
+		CEBC13451C562DC20098931A /* KNDanoline+FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KNDanoline+FMResultSet.h"; sourceTree = "<group>"; };
+		CEBC13461C562DC20098931A /* KNDanoline+FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KNDanoline+FMResultSet.m"; sourceTree = "<group>"; };
+		CEBC13481C562DE10098931A /* KNDesign+FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KNDesign+FMResultSet.h"; sourceTree = "<group>"; };
+		CEBC13491C562DE10098931A /* KNDesign+FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KNDesign+FMResultSet.m"; sourceTree = "<group>"; };
+		CEBC134B1C562E060098931A /* KNFacing+FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KNFacing+FMResultSet.h"; sourceTree = "<group>"; };
+		CEBC134C1C562E060098931A /* KNFacing+FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KNFacing+FMResultSet.m"; sourceTree = "<group>"; };
+		CEBC134E1C562E260098931A /* KNFittingContent+FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KNFittingContent+FMResultSet.h"; sourceTree = "<group>"; };
+		CEBC134F1C562E260098931A /* KNFittingContent+FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KNFittingContent+FMResultSet.m"; sourceTree = "<group>"; };
+		CEBC13511C562E4D0098931A /* KNFloorCovering+FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KNFloorCovering+FMResultSet.h"; sourceTree = "<group>"; };
+		CEBC13521C562E4D0098931A /* KNFloorCovering+FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KNFloorCovering+FMResultSet.m"; sourceTree = "<group>"; };
+		CEBC13541C562E660098931A /* KNFloors+FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KNFloors+FMResultSet.h"; sourceTree = "<group>"; };
+		CEBC13551C562E660098931A /* KNFloors+FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KNFloors+FMResultSet.m"; sourceTree = "<group>"; };
+		CEBC13571C562E7D0098931A /* KNPartition+FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KNPartition+FMResultSet.h"; sourceTree = "<group>"; };
+		CEBC13581C562E7D0098931A /* KNPartition+FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KNPartition+FMResultSet.m"; sourceTree = "<group>"; };
+		CEBC135A1C562E940098931A /* KNProperty+FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KNProperty+FMResultSet.h"; sourceTree = "<group>"; };
+		CEBC135B1C562E940098931A /* KNProperty+FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KNProperty+FMResultSet.m"; sourceTree = "<group>"; };
+		CEBC135D1C562EAB0098931A /* KNReactance+FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KNReactance+FMResultSet.h"; sourceTree = "<group>"; };
+		CEBC135E1C562EAB0098931A /* KNReactance+FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KNReactance+FMResultSet.m"; sourceTree = "<group>"; };
+		CEBC13601C562EC60098931A /* KNRiessler+FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KNRiessler+FMResultSet.h"; sourceTree = "<group>"; };
+		CEBC13611C562EC60098931A /* KNRiessler+FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KNRiessler+FMResultSet.m"; sourceTree = "<group>"; };
+		CEBC13631C562ED60098931A /* KNRoofs+FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KNRoofs+FMResultSet.h"; sourceTree = "<group>"; };
+		CEBC13641C562ED60098931A /* KNRoofs+FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KNRoofs+FMResultSet.m"; sourceTree = "<group>"; };
+		CEBC13661C562EE90098931A /* KNSpecial+FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KNSpecial+FMResultSet.h"; sourceTree = "<group>"; };
+		CEBC13671C562EE90098931A /* KNSpecial+FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KNSpecial+FMResultSet.m"; sourceTree = "<group>"; };
+		CEBC13691C562F000098931A /* KNWallsCovering+FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KNWallsCovering+FMResultSet.h"; sourceTree = "<group>"; };
+		CEBC136A1C562F000098931A /* KNWallsCovering+FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KNWallsCovering+FMResultSet.m"; sourceTree = "<group>"; };
+		CEBC136D1C57B38E0098931A /* DownPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownPicker.h; sourceTree = "<group>"; };
+		CEBC136E1C57B38E0098931A /* DownPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownPicker.m; sourceTree = "<group>"; };
+		CEBC136F1C57B38E0098931A /* UIDownPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDownPicker.h; sourceTree = "<group>"; };
+		CEBC13701C57B38E0098931A /* UIDownPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDownPicker.m; sourceTree = "<group>"; };
+		CEBC13731C58AEBD0098931A /* KNCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNCustomView.h; sourceTree = "<group>"; };
+		CEBC13741C58AEBD0098931A /* KNCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNCustomView.m; sourceTree = "<group>"; };
+		CEBC13761C58AEF30098931A /* KNCustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KNCustomView.xib; sourceTree = "<group>"; };
+		CEBE19B41C4EA70600B19809 /* KNDataClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNDataClient.h; sourceTree = "<group>"; };
+		CEBE19B51C4EA70600B19809 /* KNDataClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNDataClient.m; sourceTree = "<group>"; };
+		EE865BE7BD11F20A2BAF48A3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE29835F1C46848B003D1841 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45869E20772BD4B137CB12D9 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE29837B1C46848B003D1841 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE2983861C46848B003D1841 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6CFFB7F4DAB3FA02845C458F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE865BE7BD11F20A2BAF48A3 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AEF72FCCDA4237F4FC4FB764 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0C0502E225CB983B6A099BA /* Pods.debug.xcconfig */,
+				B22BF63AD9ADF258B24169E2 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE2983591C46848B003D1841 = {
+			isa = PBXGroup;
+			children = (
+				CE2983641C46848B003D1841 /* knauf-ios */,
+				CE2983811C46848B003D1841 /* knauf-iosTests */,
+				CE29838C1C46848B003D1841 /* knauf-iosUITests */,
+				CE2983631C46848B003D1841 /* Products */,
+				AEF72FCCDA4237F4FC4FB764 /* Pods */,
+				6CFFB7F4DAB3FA02845C458F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE2983631C46848B003D1841 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE2983621C46848B003D1841 /* knauf-ios.app */,
+				CE29837E1C46848B003D1841 /* knauf-iosTests.xctest */,
+				CE2983891C46848B003D1841 /* knauf-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE2983641C46848B003D1841 /* knauf-ios */ = {
+			isa = PBXGroup;
+			children = (
+				CEBC136C1C57B2BE0098931A /* DownPicker */,
+				CEBC13041C5614E10098931A /* Models */,
+				CEBC12E11C5104150098931A /* DataModel */,
+				CEAFA7D41C4E1D7A00639627 /* Table View Cell */,
+				CEAFA7D31C4E1D6900639627 /* View Controller */,
+				CE2983691C46848B003D1841 /* AppDelegate.m */,
+				CE2983681C46848B003D1841 /* AppDelegate.h */,
+				CEBE19B41C4EA70600B19809 /* KNDataClient.h */,
+				CEBE19B51C4EA70600B19809 /* KNDataClient.m */,
+				CE9E8AD11C58E27000F7909A /* KNAcousticResult.h */,
+				CE9E8AD21C58E27000F7909A /* KNAcousticResult.m */,
+				CEBA72451C6340CE0011991B /* KNInsulationResult.h */,
+				CEBA72461C6340CE0011991B /* KNInsulationResult.m */,
+				CE29836E1C46848B003D1841 /* Main.storyboard */,
+				CE2983741C46848B003D1841 /* Assets.xcassets */,
+				CE2983761C46848B003D1841 /* LaunchScreen.storyboard */,
+				CE2983711C46848B003D1841 /* knauf_ios.xcdatamodeld */,
+				CE2983651C46848B003D1841 /* Supporting Files */,
+			);
+			path = "knauf-ios";
+			sourceTree = "<group>";
+		};
+		CE2983651C46848B003D1841 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEAFA7D21C4E1D3000639627 /* Knauf-PrefixHeader.pch */,
+				CEAFA7CF1C4E195300639627 /* KNDefines.h */,
+				CEAFA7D01C4E195300639627 /* KNDefines.m */,
+				CE2983791C46848B003D1841 /* Info.plist */,
+				CE2983661C46848B003D1841 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE2983811C46848B003D1841 /* knauf-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE2983821C46848B003D1841 /* knauf_iosTests.m */,
+				CE2983841C46848B003D1841 /* Info.plist */,
+			);
+			path = "knauf-iosTests";
+			sourceTree = "<group>";
+		};
+		CE29838C1C46848B003D1841 /* knauf-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE29838D1C46848B003D1841 /* knauf_iosUITests.m */,
+				CE29838F1C46848B003D1841 /* Info.plist */,
+			);
+			path = "knauf-iosUITests";
+			sourceTree = "<group>";
+		};
+		CEAFA7D31C4E1D6900639627 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEAFA7D51C4E1FDF00639627 /* KNSplashViewController.h */,
+				CEAFA7D61C4E1FDF00639627 /* KNSplashViewController.m */,
+				CEBC12E61C511D9F0098931A /* KNChoiceViewController.h */,
+				CEBC12E71C511D9F0098931A /* KNChoiceViewController.m */,
+				CE9764411C4E50FE0070D6E7 /* KNResultsViewController.h */,
+				CE9764421C4E50FE0070D6E7 /* KNResultsViewController.m */,
+				CEBC12E91C5124160098931A /* KNChSystemViewController.h */,
+				CEBC12EA1C5124160098931A /* KNChSystemViewController.m */,
+				CEBC12EC1C512A820098931A /* KNTypeBuildingViewController.h */,
+				CEBC12ED1C512A820098931A /* KNTypeBuildingViewController.m */,
+				CEBC12EF1C5256140098931A /* KNAcusticViewController.h */,
+				CEBC12F01C5256140098931A /* KNAcusticViewController.m */,
+				CEBC12F21C52597F0098931A /* KNFilterViewController.h */,
+				CEBC12F31C52597F0098931A /* KNFilterViewController.m */,
+				CEBC12F51C52599B0098931A /* KNInsulationViewController.h */,
+				CEBC12F61C52599B0098931A /* KNInsulationViewController.m */,
+				CEBC13731C58AEBD0098931A /* KNCustomView.h */,
+				CEBC13741C58AEBD0098931A /* KNCustomView.m */,
+				CEBC13761C58AEF30098931A /* KNCustomView.xib */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		CEAFA7D41C4E1D7A00639627 /* Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CE97643C1C4E4E530070D6E7 /* ResultsTableViewCell.h */,
+				CE97643D1C4E4E530070D6E7 /* ResultsTableViewCell.m */,
+				CE97643E1C4E4E530070D6E7 /* ResultsTableViewCell.xib */,
+			);
+			name = "Table View Cell";
+			sourceTree = "<group>";
+		};
+		CEBC12E11C5104150098931A /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				644414DE1C6D3F67006E8D36 /* Default-568h@2x.png */,
+				644414E01C6D3F7C006E8D36 /* Default.png */,
+				644414E11C6D3F7C006E8D36 /* Default@2x.png */,
+				CEBC12E31C5104560098931A /* KNResult.h */,
+				CEBC12E41C5104560098931A /* KNResult.m */,
+			);
+			name = DataModel;
+			sourceTree = "<group>";
+		};
+		CEBC13041C5614E10098931A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEBC13051C5615130098931A /* Models */,
+				CEBC13061C5615240098931A /* Category */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		CEBC13051C5615130098931A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEBC13071C56154A0098931A /* KNModels.h */,
+				CEBC130A1C5619430098931A /* KNAbsorption.h */,
+				CEBC130B1C5619430098931A /* KNAbsorption.m */,
+				CEBC130D1C561A910098931A /* KNAcoustic.h */,
+				CEBC130E1C561A910098931A /* KNAcoustic.m */,
+				CEBC13101C561DE20098931A /* KNBuilding.h */,
+				CEBC13111C561DE20098931A /* KNBuilding.m */,
+				CEBC13141C561E9F0098931A /* KNDanoline.h */,
+				CEBC13151C561E9F0098931A /* KNDanoline.m */,
+				CEBC13171C5622C10098931A /* KNDesign.h */,
+				CEBC13181C5622C10098931A /* KNDesign.m */,
+				CEBC131A1C56246C0098931A /* KNFacing.h */,
+				CEBC131B1C56246C0098931A /* KNFacing.m */,
+				CEBC131D1C5625100098931A /* KNFittingContent.h */,
+				CEBC131E1C5625100098931A /* KNFittingContent.m */,
+				CEBC13201C56269E0098931A /* KNFloorCovering.h */,
+				CEBC13211C56269E0098931A /* KNFloorCovering.m */,
+				CEBC13231C5626E40098931A /* KNFloors.h */,
+				CEBC13241C5626E40098931A /* KNFloors.m */,
+				CEBC13261C5627EC0098931A /* KNPartition.h */,
+				CEBC13271C5627EC0098931A /* KNPartition.m */,
+				CEBC13291C5628720098931A /* KNProperty.h */,
+				CEBC132A1C5628720098931A /* KNProperty.m */,
+				CEBC132C1C5628CA0098931A /* KNReactance.h */,
+				CEBC132D1C5628CA0098931A /* KNReactance.m */,
+				CEBC13331C5629970098931A /* KNRiessler.h */,
+				CEBC13341C5629970098931A /* KNRiessler.m */,
+				CEBC13361C562C390098931A /* KNRoofs.h */,
+				CEBC13371C562C390098931A /* KNRoofs.m */,
+				CEBC13391C562C980098931A /* KNSpecial.h */,
+				CEBC133A1C562C980098931A /* KNSpecial.m */,
+				CEBC13301C5629430098931A /* KNWallsCovering.h */,
+				CEBC13311C5629430098931A /* KNWallsCovering.m */,
+				CEB3E0AE1C5A510B007FB993 /* KNResultsAcoustic.h */,
+				CEB3E0AF1C5A510B007FB993 /* KNResultsAcoustic.m */,
+				CEBA72481C6364030011991B /* KNResultsInsulation.h */,
+				CEBA72491C6364030011991B /* KNResultsInsulation.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		CEBC13061C5615240098931A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				CEBC133C1C562D770098931A /* KNAbsorption+FMResultSet.h */,
+				CEBC133D1C562D770098931A /* KNAbsorption+FMResultSet.m */,
+				CEBC133F1C562D940098931A /* KNAcoustic+FMResultSet.h */,
+				CEBC13401C562D940098931A /* KNAcoustic+FMResultSet.m */,
+				CEBC13421C562DAC0098931A /* KNBuilding+FMResultSet.h */,
+				CEBC13431C562DAC0098931A /* KNBuilding+FMResultSet.m */,
+				CEBC13451C562DC20098931A /* KNDanoline+FMResultSet.h */,
+				CEBC13461C562DC20098931A /* KNDanoline+FMResultSet.m */,
+				CEBC13481C562DE10098931A /* KNDesign+FMResultSet.h */,
+				CEBC13491C562DE10098931A /* KNDesign+FMResultSet.m */,
+				CEBC134B1C562E060098931A /* KNFacing+FMResultSet.h */,
+				CEBC134C1C562E060098931A /* KNFacing+FMResultSet.m */,
+				CEBC134E1C562E260098931A /* KNFittingContent+FMResultSet.h */,
+				CEBC134F1C562E260098931A /* KNFittingContent+FMResultSet.m */,
+				CEBC13511C562E4D0098931A /* KNFloorCovering+FMResultSet.h */,
+				CEBC13521C562E4D0098931A /* KNFloorCovering+FMResultSet.m */,
+				CEBC13541C562E660098931A /* KNFloors+FMResultSet.h */,
+				CEBC13551C562E660098931A /* KNFloors+FMResultSet.m */,
+				CEBC13571C562E7D0098931A /* KNPartition+FMResultSet.h */,
+				CEBC13581C562E7D0098931A /* KNPartition+FMResultSet.m */,
+				CEBC135A1C562E940098931A /* KNProperty+FMResultSet.h */,
+				CEBC135B1C562E940098931A /* KNProperty+FMResultSet.m */,
+				CEBC135D1C562EAB0098931A /* KNReactance+FMResultSet.h */,
+				CEBC135E1C562EAB0098931A /* KNReactance+FMResultSet.m */,
+				CEBC13601C562EC60098931A /* KNRiessler+FMResultSet.h */,
+				CEBC13611C562EC60098931A /* KNRiessler+FMResultSet.m */,
+				CEBC13631C562ED60098931A /* KNRoofs+FMResultSet.h */,
+				CEBC13641C562ED60098931A /* KNRoofs+FMResultSet.m */,
+				CEBC13661C562EE90098931A /* KNSpecial+FMResultSet.h */,
+				CEBC13671C562EE90098931A /* KNSpecial+FMResultSet.m */,
+				CEBC13691C562F000098931A /* KNWallsCovering+FMResultSet.h */,
+				CEBC136A1C562F000098931A /* KNWallsCovering+FMResultSet.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		CEBC136C1C57B2BE0098931A /* DownPicker */ = {
+			isa = PBXGroup;
+			children = (
+				CEBC136D1C57B38E0098931A /* DownPicker.h */,
+				CEBC136E1C57B38E0098931A /* DownPicker.m */,
+				CEBC136F1C57B38E0098931A /* UIDownPicker.h */,
+				CEBC13701C57B38E0098931A /* UIDownPicker.m */,
+			);
+			name = DownPicker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE2983611C46848B003D1841 /* knauf-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE2983921C46848B003D1841 /* Build configuration list for PBXNativeTarget "knauf-ios" */;
+			buildPhases = (
+				48BE5607B0817E4343477AFA /* Check Pods Manifest.lock */,
+				CE29835E1C46848B003D1841 /* Sources */,
+				CE29835F1C46848B003D1841 /* Frameworks */,
+				CE2983601C46848B003D1841 /* Resources */,
+				E2D0F3F84214FE11C9049249 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "knauf-ios";
+			productName = "knauf-ios";
+			productReference = CE2983621C46848B003D1841 /* knauf-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE29837D1C46848B003D1841 /* knauf-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE2983951C46848B003D1841 /* Build configuration list for PBXNativeTarget "knauf-iosTests" */;
+			buildPhases = (
+				CE29837A1C46848B003D1841 /* Sources */,
+				CE29837B1C46848B003D1841 /* Frameworks */,
+				CE29837C1C46848B003D1841 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE2983801C46848B003D1841 /* PBXTargetDependency */,
+			);
+			name = "knauf-iosTests";
+			productName = "knauf-iosTests";
+			productReference = CE29837E1C46848B003D1841 /* knauf-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE2983881C46848B003D1841 /* knauf-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE2983981C46848B003D1841 /* Build configuration list for PBXNativeTarget "knauf-iosUITests" */;
+			buildPhases = (
+				CE2983851C46848B003D1841 /* Sources */,
+				CE2983861C46848B003D1841 /* Frameworks */,
+				CE2983871C46848B003D1841 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE29838B1C46848B003D1841 /* PBXTargetDependency */,
+			);
+			name = "knauf-iosUITests";
+			productName = "knauf-iosUITests";
+			productReference = CE2983891C46848B003D1841 /* knauf-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE29835A1C46848B003D1841 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = User;
+				TargetAttributes = {
+					CE2983611C46848B003D1841 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					CE29837D1C46848B003D1841 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = CE2983611C46848B003D1841;
+					};
+					CE2983881C46848B003D1841 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = CE2983611C46848B003D1841;
+					};
+				};
+			};
+			buildConfigurationList = CE29835D1C46848B003D1841 /* Build configuration list for PBXProject "knauf-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE2983591C46848B003D1841;
+			productRefGroup = CE2983631C46848B003D1841 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE2983611C46848B003D1841 /* knauf-ios */,
+				CE29837D1C46848B003D1841 /* knauf-iosTests */,
+				CE2983881C46848B003D1841 /* knauf-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE2983601C46848B003D1841 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEBC13771C58AEF30098931A /* KNCustomView.xib in Resources */,
+				644414E21C6D3F7C006E8D36 /* Default.png in Resources */,
+				644414E31C6D3F7C006E8D36 /* Default@2x.png in Resources */,
+				CE2983781C46848B003D1841 /* LaunchScreen.storyboard in Resources */,
+				644414DF1C6D3F67006E8D36 /* Default-568h@2x.png in Resources */,
+				CE2983751C46848B003D1841 /* Assets.xcassets in Resources */,
+				CE9764401C4E4E530070D6E7 /* ResultsTableViewCell.xib in Resources */,
+				CE2983701C46848B003D1841 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE29837C1C46848B003D1841 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE2983871C46848B003D1841 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48BE5607B0817E4343477AFA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E2D0F3F84214FE11C9049249 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE29835E1C46848B003D1841 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9E8AD31C58E27000F7909A /* KNAcousticResult.m in Sources */,
+				CEBC13531C562E4D0098931A /* KNFloorCovering+FMResultSet.m in Sources */,
+				CEBC13381C562C390098931A /* KNRoofs.m in Sources */,
+				CEBC12E81C511D9F0098931A /* KNChoiceViewController.m in Sources */,
+				CEBC132B1C5628720098931A /* KNProperty.m in Sources */,
+				CEBC13351C5629970098931A /* KNRiessler.m in Sources */,
+				CEBC13221C56269E0098931A /* KNFloorCovering.m in Sources */,
+				CE2983731C46848B003D1841 /* knauf_ios.xcdatamodeld in Sources */,
+				CEBC13121C561DE20098931A /* KNBuilding.m in Sources */,
+				CEBC13651C562ED60098931A /* KNRoofs+FMResultSet.m in Sources */,
+				CEBC13561C562E660098931A /* KNFloors+FMResultSet.m in Sources */,
+				CEBC13441C562DAC0098931A /* KNBuilding+FMResultSet.m in Sources */,
+				CEAFA7D71C4E1FDF00639627 /* KNSplashViewController.m in Sources */,
+				CEBC134A1C562DE10098931A /* KNDesign+FMResultSet.m in Sources */,
+				CEBC130C1C5619430098931A /* KNAbsorption.m in Sources */,
+				CEBA724A1C6364030011991B /* KNResultsInsulation.m in Sources */,
+				CE29836A1C46848B003D1841 /* AppDelegate.m in Sources */,
+				CEBC131F1C5625100098931A /* KNFittingContent.m in Sources */,
+				CEBC13321C5629430098931A /* KNWallsCovering.m in Sources */,
+				CEBC13681C562EE90098931A /* KNSpecial+FMResultSet.m in Sources */,
+				CEBC13471C562DC20098931A /* KNDanoline+FMResultSet.m in Sources */,
+				CEBC13501C562E260098931A /* KNFittingContent+FMResultSet.m in Sources */,
+				CEBE19B61C4EA70600B19809 /* KNDataClient.m in Sources */,
+				CEBC13591C562E7D0098931A /* KNPartition+FMResultSet.m in Sources */,
+				CEBC13751C58AEBD0098931A /* KNCustomView.m in Sources */,
+				CEBC12E51C5104560098931A /* KNResult.m in Sources */,
+				CEBC13191C5622C10098931A /* KNDesign.m in Sources */,
+				CEBA72471C6340CE0011991B /* KNInsulationResult.m in Sources */,
+				CEBC13621C562EC60098931A /* KNRiessler+FMResultSet.m in Sources */,
+				CEBC131C1C56246C0098931A /* KNFacing.m in Sources */,
+				CE2983671C46848B003D1841 /* main.m in Sources */,
+				CEAFA7D11C4E195300639627 /* KNDefines.m in Sources */,
+				CEBC130F1C561A910098931A /* KNAcoustic.m in Sources */,
+				CEBC12F11C5256140098931A /* KNAcusticViewController.m in Sources */,
+				CEBC12EB1C5124160098931A /* KNChSystemViewController.m in Sources */,
+				CEBC135C1C562E940098931A /* KNProperty+FMResultSet.m in Sources */,
+				CEBC12EE1C512A820098931A /* KNTypeBuildingViewController.m in Sources */,
+				CEBC133B1C562C980098931A /* KNSpecial.m in Sources */,
+				CEB3E0B01C5A510B007FB993 /* KNResultsAcoustic.m in Sources */,
+				CE9764431C4E50FE0070D6E7 /* KNResultsViewController.m in Sources */,
+				CEBC133E1C562D770098931A /* KNAbsorption+FMResultSet.m in Sources */,
+				CEBC13281C5627EC0098931A /* KNPartition.m in Sources */,
+				CEBC13721C57B38E0098931A /* UIDownPicker.m in Sources */,
+				CEBC13251C5626E40098931A /* KNFloors.m in Sources */,
+				CE97643F1C4E4E530070D6E7 /* ResultsTableViewCell.m in Sources */,
+				CEBC134D1C562E060098931A /* KNFacing+FMResultSet.m in Sources */,
+				CEBC13411C562D940098931A /* KNAcoustic+FMResultSet.m in Sources */,
+				CEBC136B1C562F000098931A /* KNWallsCovering+FMResultSet.m in Sources */,
+				CEBC135F1C562EAB0098931A /* KNReactance+FMResultSet.m in Sources */,
+				CEBC13161C561E9F0098931A /* KNDanoline.m in Sources */,
+				CEBC132E1C5628CA0098931A /* KNReactance.m in Sources */,
+				CEBC13711C57B38E0098931A /* DownPicker.m in Sources */,
+				CEBC12F41C52597F0098931A /* KNFilterViewController.m in Sources */,
+				CEBC12F71C52599B0098931A /* KNInsulationViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE29837A1C46848B003D1841 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE2983831C46848B003D1841 /* knauf_iosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE2983851C46848B003D1841 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE29838E1C46848B003D1841 /* knauf_iosUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE2983801C46848B003D1841 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE2983611C46848B003D1841 /* knauf-ios */;
+			targetProxy = CE29837F1C46848B003D1841 /* PBXContainerItemProxy */;
+		};
+		CE29838B1C46848B003D1841 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE2983611C46848B003D1841 /* knauf-ios */;
+			targetProxy = CE29838A1C46848B003D1841 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE29836E1C46848B003D1841 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE29836F1C46848B003D1841 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE2983761C46848B003D1841 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE2983771C46848B003D1841 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE2983901C46848B003D1841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CE2983911C46848B003D1841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE2983931C46848B003D1841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0C0502E225CB983B6A099BA /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Knauf-PrefixHeader.pch";
+				INFOPLIST_FILE = "knauf-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HelloWorld.knauf-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE2983941C46848B003D1841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B22BF63AD9ADF258B24169E2 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Knauf-PrefixHeader.pch";
+				INFOPLIST_FILE = "knauf-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HelloWorld.knauf-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE2983961C46848B003D1841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "knauf-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HelloWorld.knauf-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/knauf-ios.app/knauf-ios";
+			};
+			name = Debug;
+		};
+		CE2983971C46848B003D1841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "knauf-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HelloWorld.knauf-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/knauf-ios.app/knauf-ios";
+			};
+			name = Release;
+		};
+		CE2983991C46848B003D1841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "knauf-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HelloWorld.knauf-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "knauf-ios";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CE29839A1C46848B003D1841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "knauf-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HelloWorld.knauf-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "knauf-ios";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE29835D1C46848B003D1841 /* Build configuration list for PBXProject "knauf-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE2983901C46848B003D1841 /* Debug */,
+				CE2983911C46848B003D1841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE2983921C46848B003D1841 /* Build configuration list for PBXNativeTarget "knauf-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE2983931C46848B003D1841 /* Debug */,
+				CE2983941C46848B003D1841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE2983951C46848B003D1841 /* Build configuration list for PBXNativeTarget "knauf-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE2983961C46848B003D1841 /* Debug */,
+				CE2983971C46848B003D1841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE2983981C46848B003D1841 /* Build configuration list for PBXNativeTarget "knauf-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE2983991C46848B003D1841 /* Debug */,
+				CE29839A1C46848B003D1841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE2983711C46848B003D1841 /* knauf_ios.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE2983721C46848B003D1841 /* knauf_ios.xcdatamodel */,
+			);
+			currentVersion = CE2983721C46848B003D1841 /* knauf_ios.xcdatamodel */;
+			path = knauf_ios.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CE29835A1C46848B003D1841 /* Project object */;
+}
